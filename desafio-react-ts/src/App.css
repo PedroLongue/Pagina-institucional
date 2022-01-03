@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --blue-500: #00c8ff;
+  --white-500: #ffffff;
+  --grey-100: #f0f0f0;
+  --black-500: #000000;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

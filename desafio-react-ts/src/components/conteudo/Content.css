@@ -1,0 +1,179 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.page-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #e5e5e5;
+  margin-right: 30px;
+}
+
+.page-link-button {
+  width: 100%;
+  max-width: 270px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #7d7d7d;
+}
+
+.page-link-button--active {
+  color: white;
+  background-color: #00c8ff;
+  width: 270px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #292929;
+  font-family: "Roboto", sans-serif;
+  margin-top: 124px;
+  margin-bottom: 41px;
+}
+
+.content-section {
+  width: 100%;
+  max-width: 715px;
+  height: 273px;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  width: 100%;
+  max-width: 715px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  color: #7d7d7d;
+}
+
+.content-section-description--text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7d7d7d;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  /* or 95% */
+
+  color: #110d0f;
+}
+.input-label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #100d0e;
+  margin-bottom: 5px;
+}
+
+.input-box {
+  background: #ffffff;
+  border: 1px solid #100d0e;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 391.49px;
+  height: 47.12px;
+  clear: both;
+  margin-bottom: 13px;
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b7b7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 715px;
+  align-items: flex-start;
+}
+
+.content-section {
+  width: 100%;
+  max-width: 715px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+@media (max-width: 600px) {
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    max-width: 343px;
+  }
+  .content-section {
+    width: 100%;
+    max-width: 343px;
+  }
+}
