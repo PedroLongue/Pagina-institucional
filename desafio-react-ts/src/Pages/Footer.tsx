@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 
+//Responsivo do footer esta com overflow
+
 function Footer() {
   return (
     <div className="footer">

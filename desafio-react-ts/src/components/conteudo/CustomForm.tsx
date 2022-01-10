@@ -20,6 +20,8 @@ const initialValues = {
   instagram: "",
 };
 
+//Não consegui submeter o formulario, o usuario do instagram sempre está inválido
+
 function CustomForm() {
   const handleFormikSubmit = (values: IFormikValues) => {
     console.log(values);

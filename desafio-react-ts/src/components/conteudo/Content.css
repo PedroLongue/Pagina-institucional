@@ -65,6 +65,7 @@
   margin-bottom: 41px;
 }
 
+/* Retirar o height no mobile */
 .content-section {
   width: 100%;
   max-width: 715px;

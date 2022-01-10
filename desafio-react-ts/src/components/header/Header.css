@@ -53,6 +53,8 @@
   margin: 18px 260px 0 0;
 }
 
+/* A margem está criando um overflow em telas menores, considere retirar a margem em telas menores */
+
 .header-login {
   color: white;
   margin: 0 40px 0 0;
