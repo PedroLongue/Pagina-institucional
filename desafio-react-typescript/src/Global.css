@@ -1,0 +1,9 @@
+:root {
+  --blue500: #00c8ff;
+  --grey300: #c4c4c4;
+  --white500: #ffffff;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}

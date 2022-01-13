@@ -1,0 +1,28 @@
+.SearchBox {
+  position: relative;
+  width: 100%;
+  max-width: 264px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background: var(--white500);
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.SearchBox-input {
+  width: 100%;
+  border: 2px solid var(--gray300);
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gray300);
+}
+
+.SearchBox > img {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 7px;
+  bottom: 7px;
+  right: 11px;
+}
