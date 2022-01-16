@@ -10,10 +10,6 @@
   margin-bottom: 16px;
 }
 
-.Newsletter-wrapper {
-  margin-top: 17px;
-}
-
 .Newsletter-Account {
   display: flex;
   margin-top: 5px;
@@ -50,4 +46,38 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
+  border: none;
+  color: var(--white500);
+}
+
+@media (max-width: 768px) {
+  .Newsletter-Account {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+  }
+
+  .Newsletter-Button {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 16px 0 0;
+  }
+
+  .Newsletter-Input {
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .Newsletter-title {
+    text-align: left;
+    width: 100%;
+    max-width: 90%;
+    margin: 21px auto 12px;
+    line-height: 16px;
+    font-size: 14px;
+  }
 }
