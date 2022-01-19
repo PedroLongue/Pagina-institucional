@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 :root {
   --blue500: #00c8ff;
   --grey300: #c4c4c4;
+  --grey400: #7d7d7d;
+  --black400: #292929;
+  --black500: #110d0f;
   --white500: #ffffff;
 }
 

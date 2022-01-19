@@ -1,0 +1,71 @@
+.CustomForm-Container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.CustomForm-Title {
+  color: var(--black500);
+  line-height: 23px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+}
+
+.CustomForm-Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.CustomForm-Label {
+  margin-top: 34px;
+  color: var(--black500);
+  text-align: start;
+}
+
+.CustomForm-Input {
+  background: var(--white500);
+  border: 1px solid var(--black500);
+  box-sizing: border-box;
+  border-radius: 25px;
+  height: 48px;
+  max-width: 392px;
+  padding-left: 28px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.CustomForm-Checkbox-Label {
+  text-decoration-line: underline;
+  color: var(--black500);
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.CustomForm-Checkbox-Wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.CustomForm-Checkbox-Input {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-left: 8px;
+}
+
+.CustomForm-Button {
+  background: var(--blue500);
+  border: 0;
+  padding: 8px 0;
+  border-radius: 25px;
+  width: 100%;
+  color: var(--white500);
+  font-size: 16px;
+  line-height: 34px;
+  cursor: pointer;
+}
