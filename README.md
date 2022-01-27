@@ -3,7 +3,7 @@
 https://i.imgur.com/wviTksB.png
 https://i.imgur.com/c2CSbQB.png
 https://i.imgur.com/XiGRS7G.png
-
+https://i.imgur.com/ljC70gk.png // Não existe validação e os mesmos erros de css persistem. 
 
 # Desafio REACT e Typescript
 
