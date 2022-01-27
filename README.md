@@ -1,3 +1,10 @@
+# Avaliação
+
+https://i.imgur.com/wviTksB.png
+https://i.imgur.com/c2CSbQB.png
+https://i.imgur.com/XiGRS7G.png
+
+
 # Desafio REACT e Typescript
 
 
