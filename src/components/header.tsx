@@ -5,6 +5,7 @@ import { Mobile } from "./mobile";
 import "./styles/header.css";
 
 const Header = () => {
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -58,6 +59,20 @@ const Header = () => {
           </div>
         </nav>
       </header>
+      <div className="fixed-buttons">
+        <img
+          className="whatsapp-icon"
+          src="./images/whatsapp-icon.png"
+          alt="whatsapp"
+        />
+        <div onClick={scrollToTop} className="arrow-scroll-wrapper">
+          <img
+            className="arrow-scroll-icon"
+            src="./images/arrow-up-icon.png"
+            alt="seta"
+          />
+        </div>
+      </div>
     </>
   );
 };

@@ -7,6 +7,7 @@ const Footer = () => {
   const [toggleOpen1, setToggleOpen1] = useState(false);
   const [toggleOpen2, setToggleOpen2] = useState(false);
   const [toggleOpen3, setToggleOpen3] = useState(false);
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <>
@@ -38,13 +39,13 @@ const Footer = () => {
               </div>
             </div>
             <div className={`footer-link-wrapper ${toggleOpen1 && "open"}`}>
-              <Link className="footer-link" to="/">
+              <Link onClick={scrollToTop} className="footer-link" to="/">
                 Quem Somos
               </Link>
-              <Link className="footer-link" to="/safety">
+              <Link onClick={scrollToTop} className="footer-link" to="/safety">
                 Política de Privacidade
               </Link>
-              <Link className="footer-link" to="/safety">
+              <Link onClick={scrollToTop} className="footer-link" to="/safety">
                 Segurança
               </Link>
               <Link className="footer-link footer-link-underline" to="#">
@@ -67,13 +68,21 @@ const Footer = () => {
               </div>
             </div>
             <div className={`footer-link-wrapper ${toggleOpen2 && "open"}`}>
-              <Link className="footer-link" to="/delivery">
+              <Link
+                onClick={scrollToTop}
+                className="footer-link"
+                to="/delivery"
+              >
                 Entrega
               </Link>
-              <Link className="footer-link" to="/payments">
+              <Link
+                onClick={scrollToTop}
+                className="footer-link"
+                to="/payments"
+              >
                 Pagamento
               </Link>
-              <Link className="footer-link" to="/refund">
+              <Link onClick={scrollToTop} className="footer-link" to="/refund">
                 Trocas e Devoluções
               </Link>
               <Link className="footer-link" to="#">
