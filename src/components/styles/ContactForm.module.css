@@ -1,0 +1,153 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-left: 62px;
+  padding: 0 12px;
+}
+
+.form-wrapper form {
+  max-width: 400px;
+}
+
+.form-wrapper h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #110d0f;
+  margin: 0 0 13px;
+}
+
+.form-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 14px 0;
+}
+
+.form-col label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #100d0e;
+}
+
+.form-col input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  height: 36px;
+  border-radius: 25px;
+  border: 1px solid #100d0e;
+  outline: 0;
+  padding: 11px 15px;
+  color: black;
+}
+
+.form-col input::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #b9b7b7;
+}
+
+.form-col input.invalid {
+  border-color: #03bffe;
+}
+
+.form-col-terms {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form-col-terms label {
+  display: block;
+  margin: 5px 0 15px;
+}
+
+.form-col-terms input {
+  position: absolute;
+  margin: 4px 10px 22px;
+  cursor: pointer;
+}
+
+.form-wrapper button {
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+  border: none;
+  background: #03bffe;
+  border-radius: 25px;
+  cursor: pointer;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-wrapper button:hover {
+  filter: brightness(80%);
+}
+
+.form-invalid-feedback {
+  position: absolute;
+  bottom: -6px;
+  padding: 0 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #03bffe;
+  border-radius: 25px;
+}
+
+.form-invalid-feedback-terms {
+  position: absolute;
+  width: 162px;
+  bottom: -20px;
+  left: 104px;
+  padding: 1px 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #03bffe;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  .form-col {
+    min-width: 350px;
+  }
+
+  .form-invalid-feedback-terms {
+    right: 99px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    margin: 0;
+  }
+
+  .form-col {
+    min-width: none;
+  }
+
+  .form-invalid-feedback-terms {
+    right: 0;
+    left: 0;
+  }
+}

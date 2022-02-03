@@ -1,0 +1,178 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #00c8ff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top,
+.header-nav-wrapper {
+  padding-left: 110px;
+  padding-right: 40px;
+  padding-bottom: 14px;
+}
+
+.logo-image {
+  margin-top: 28px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  width: 264px;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.search-input::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #c4c4c4;
+}
+
+.search-icon {
+  position: absolute;
+  padding: 8px 12px;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.user-wrapper {
+  align-items: center;
+  padding-top: 28px;
+  display: flex;
+}
+
+.user-login {
+  margin-right: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.user-login:hover {
+  filter: brightness(90%);
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.header-nav {
+  border-top: 1px solid #c4c4c4;
+}
+
+.header-nav-wrapper {
+  padding-top: 14px;
+  display: flex;
+}
+
+.header-nav-link {
+  margin-right: 126px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 500;
+  text-decoration: none;
+  color: #fff;
+}
+.header-nav-link:hover {
+  filter: brightness(90%);
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-icon {
+    display: none;
+  }
+
+  .search-desktop-wrapper {
+    position: relative;
+    padding-top: 26px;
+  }
+
+  .search-mobile-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-top {
+    padding: 30px 16px 0;
+  }
+
+  .user-wrapper,
+  .logo-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-desktop-wrapper,
+  .header-nav,
+  .user-login {
+    display: none;
+  }
+
+  .mobile-icon {
+    width: 28px;
+    height: 28px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .search-mobile-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 343px;
+    margin: 34px auto 0px;
+    padding: 0 16px 16px;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 343px;
+    justify-content: center;
+  }
+
+  .search-icon {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+.fixed-buttons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin: 0px 14px;
+  right: 0;
+  bottom: 50px;
+  z-index: 5;
+}
+
+.arrow-scroll-wrapper {
+  margin: 12px 0;
+  width: 40px;
+  height: 40px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
+.arrow-scroll-icon {
+  position: absolute;
+  bottom: 29px;
+  left: 13px;
+}
+
+.arrow-scroll-wrapper,
+.whatsapp-icon {
+  cursor: pointer;
+}
