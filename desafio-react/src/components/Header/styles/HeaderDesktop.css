@@ -1,0 +1,75 @@
+.header-page {
+  background: var(--gray-500);
+}
+
+.wrapper-header-page-top-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px;
+  align-items: center;
+  background: var(--blue-500);
+}
+
+.wrapper-top-content {
+  display: flex;
+}
+
+.wrapper-search-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 264px;
+  height: 32px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  background: var(--white);
+  margin: 0 15px;
+}
+
+.search-content-button,
+.top-content-button,
+.user-options-button,
+.courses-infos-button,
+.know-more-button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-content-input {
+  width: 100%;
+  max-width: 264px;
+}
+
+.top-content-input::-webkit-input-placeholder {
+  font-family: var(--font-family-Roboto);
+  color: var(--gray-500);
+}
+
+.wrapper-header-page-user-options {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.user-options-title {
+  font-size: 14px;
+  color: var(--white);
+  font-family: var(--font-family-Roboto);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.wrapper-header-page-infos {
+  display: flex;
+  justify-content: flex-start;
+  padding: 14px 110px;
+  gap: 126px;
+  background: var(--blue-500);
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 520px) {
+  .header-page {
+    display: none;
+  }
+}

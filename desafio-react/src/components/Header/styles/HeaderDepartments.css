@@ -1,0 +1,114 @@
+.courses-infos,
+.know-more-infos {
+  font-family: var(--font-family-Roboto);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.know-more-subcategories-wrapper {
+  display: none;
+}
+
+.courses-infos-subcategories-wrapper {
+  display: none;
+}
+
+.isOpened {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 110px;
+  background: var(--white);
+}
+
+.courses-infos-title {
+  font-size: 28px;
+  font-family: var(--font-family-Roboto);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.courses-infos-category,
+.courses-infos-category-link,
+.courses-infos-style-see-all,
+.courses-infos-style-see-all-category {
+  list-style: none;
+  text-decoration: none;
+}
+
+.courses-infos-category {
+  padding-left: 20px;
+}
+.courses-infos-category-link {
+  font-family: var(--font-family-Roboto);
+  color: var(--black);
+  font-style: normal;
+  font-size: 14px;
+}
+
+.courses-infos-style-see-all {
+  font-size: 18px;
+  font-family: var(--font-family-Roboto);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black);
+}
+
+@media screen and (max-width: 520px) {
+  .courses-infos,
+  .know-more-infos {
+    color: var(--black);
+  }
+
+  .wrapper-header-page-infos {
+    background: transparent;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .isOpened {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 110px;
+    background: var(--white);
+  }
+
+  .courses-infos-title {
+    font-size: 28px;
+    font-family: var(--font-family-Roboto);
+    font-style: normal;
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  .courses-infos-category,
+  .courses-infos-category-link,
+  .courses-infos-style-see-all,
+  .courses-infos-style-see-all-category {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .courses-infos-category {
+    padding-left: 20px;
+  }
+  .courses-infos-category-link {
+    font-family: var(--font-family-Roboto);
+    color: var(--black);
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  .courses-infos-style-see-all {
+    font-size: 18px;
+    font-family: var(--font-family-Roboto);
+    font-style: normal;
+    font-weight: 700;
+    color: var(--black);
+  }
+}
