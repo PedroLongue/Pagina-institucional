@@ -72,4 +72,12 @@
   .header-page {
     display: none;
   }
+
+  .wrapper-header-page-infos {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    background: none;
+    margin-top: 0px;
+  }
 }
