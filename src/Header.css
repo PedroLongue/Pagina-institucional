@@ -114,7 +114,7 @@ a:link {
 	margin:14px 126px 14px 110px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 	.header-mobile-wrapper{
 		display: none;
 	}
@@ -129,8 +129,11 @@ a:link {
 		display: grid;
 		justify-content: center;
 		align-items: center;
-		background: #00C8FF;
 		height: 140px;
+
+		background: #00C8FF;
+		border: 1px solid #000000;
+		box-sizing: border-box;
 	}
 	.header-mobile-title {
 		display: flex;
