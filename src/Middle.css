@@ -45,7 +45,7 @@
 	flex-direction: column;
 	height: 244px;
 	border-right: 1px solid #E5E5E5;
-	margin-right: 200px;
+	margin-right: 232px;
 }
 
 .middle-contact-disabled {
@@ -73,7 +73,7 @@
 .middle-contact-active-form {
 	background-color: #00C8FF;
 	outline: 0;
-	min-width: 270px;
+	width: 270px;
 	border: 0;
 	text-align: initial;
 	padding:10px 0px 10px 16px;
@@ -126,8 +126,7 @@
 .middle-form-active {
 	background: #FFFFFF;
 	transition: all .2s ease-in-out;
-	transform: translateX(-236px);
-	width: 392px;
+	transform: translateX(-264px);
 	margin:0 0 0 96px;
 
 }
@@ -145,7 +144,7 @@
 	line-height: 23px;
 
 	color: #110D0F;
-	margin:10px 0 20px 10px;
+	margin:10px 0 20px 26px;
 }
 
 .middle-form-input-title {
@@ -167,7 +166,7 @@
 	border-radius: 25px;
 
 	padding:14px 30px;
-	min-width: 390px;
+	width: 390px;
 }
 .middle-form-input::placeholder {
 	font-family: Roboto;
@@ -250,12 +249,13 @@
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 1025px) and (max-width: 1260px){
 	.middle-description-content {
 		max-width: 510px;
 	}
 	.middle-description-content-text {
 		text-align: justify;
+		max-width: 400px;
 	}
 	.middle-description-infos {
 		margin-left: 16px;
@@ -263,9 +263,12 @@
 	.middle-title{
 		margin-bottom: 80px;
 	}
+	.middle-description-infos-contact {
+		margin-right: 200px;
+	}
 }
 
-@media screen and (max-width: 914px){
+@media screen and (max-width: 1024px){
 	.middle-icons {
 		margin:14px 0 32px 0;
 	}
@@ -280,9 +283,9 @@
 		align-items: center;
 	}
 	.middle-description-infos {
-		min-width: 344px;
+		width: 342px;
 		border: 0;
-		margin:0 0 50px 0;
+		margin:0 0 30px 0;
 	}
 	.middle-description-content {
 		display: flex;
@@ -302,5 +305,38 @@
 		line-height: 18px;
 		width: 344px;
 		text-align: justify;
+	}
+
+	.middle-description-infos-contact {
+		margin-right: 0;
+		border-right: 0;
+		margin:0 0 10px 0;
+	}
+	.middle-contact-active-form,
+	.middle-contact-active {
+		width: 342px;
+		margin-right: 0;
+	}
+	.middle-form-active {
+		transform: translate(0px);
+		margin:0;
+	}
+	.middle-form-input {
+		width: 312px;
+	}
+
+	.middle-form-title{
+		font-family: Roboto;
+		font-size: 18px;
+		line-height: 18px;
+
+		color: #110D0F;
+		margin:0 0 28px 30px;
+	}
+	.middle-form-input-title {
+		margin:18px 0 12px 12px;
+	}
+	.middle-form {
+		align-items: center;
 	}
 }
