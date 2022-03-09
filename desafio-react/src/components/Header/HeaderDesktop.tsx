@@ -1,5 +1,3 @@
-import React from "react";
-
 import { HeaderDepartments } from "./HeaderDepartments";
 import { HeaderMobile } from "./HeaderMobile";
 
