@@ -2,7 +2,9 @@
 	font-family: Helvetica Neue LT Std;
 	src: url(../fonts/HelveticaNeueLTStd-Th.otf);
 }
-
+.middle-main {
+	position: relative;
+}
 .middle-icons {
 	display: flex;
 	align-items: center;
@@ -87,10 +89,15 @@
 	transition: all .2s ease-in-out;
 }
 
+.middle-contact-active-form {
+	margin-right: 14px;
+}
+
 .middle-description {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 170px;
+	position: relative;
 }
 
 .middle-description-content {
@@ -102,6 +109,9 @@
 	color: #292929;
 	margin:0 0 12px 0;
 }
+.middle-description-content-title-none {
+	display: none;
+}
 .middle-description-content-text {
 	font-family: Roboto;
 	font-size: 13px;
@@ -109,6 +119,69 @@
 	color: #7D7D7D;
 	margin: 0;
 }
+.middle-description-content-text-none {
+	display: none;
+}
+.middle-form-disabled {
+	transition: all .2s ease-in-out;
+	transform: translateX(-2000px);
+}
+.middle-form-active {
+	background: #FFFFFF;
+	transition: all .2s ease-in-out;
+	transform: translateX(0px);
+	width: 392px;
+	margin:0 0 0 66px;
+}
+
+.middle-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-form-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+
+	color: #110D0F;
+	margin:10px 0 20px 0;
+}
+
+.middle-form-input-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+
+	color: #100D0E;
+
+	margin:14px 0px 6px 0;
+}
+
+.middle-form-input {
+	background: #FFFFFF;
+	border: 1px solid #100D0E;
+	box-sizing: border-box;
+	border-radius: 25px;
+
+	padding:14px 30px;
+	min-width: 390px;
+}
+.middle-form-input::placeholder {
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 23px;
+	color: #B9B7B7;
+}
+
+.middle-title-form {
+	display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1260px){
 	.middle-description-content-text {
 		max-width: 95%;

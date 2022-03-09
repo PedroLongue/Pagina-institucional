@@ -11,13 +11,14 @@ const Middle = () => {
     const [troca, setTroca] = useState(false);
     const [seguranca, setSeguranca] = useState(false);
     const [contato, setContato] = useState(false);
-
+    const [formulario, setFormulario] = useState(false);
     const sobreActive = () => {
         setForma(false);
         setEntrega(false);
         setTroca(false);
         setSeguranca(false);
         setContato(false);
+        setFormulario(false);
         sobre ? setSobre (false) : setSobre(true);
     }
 
@@ -27,6 +28,7 @@ const Middle = () => {
         setTroca(false);
         setSeguranca(false);
         setContato(false);
+        setFormulario(false);
         forma ? setForma (false) : setForma(true);
     }
 
@@ -36,6 +38,7 @@ const Middle = () => {
         setTroca(false);
         setSeguranca(false);
         setContato(false);
+        setFormulario(false);
         entrega ? setEntrega (false) : setEntrega(true);
     }
 
@@ -45,6 +48,7 @@ const Middle = () => {
         setEntrega(false);
         setSeguranca(false);
         setContato(false);
+        setFormulario(false);
         troca ? setTroca (false) : setTroca(true);
     }
 
@@ -54,6 +58,7 @@ const Middle = () => {
         setEntrega(false);
         setTroca(false);
         setContato(false);
+        setFormulario(false);
         seguranca ? setSeguranca (false) : setSeguranca(true);
     }
 
@@ -63,15 +68,24 @@ const Middle = () => {
         setEntrega(false);
         setTroca(false);
         setSeguranca(false);
-    contato ? setContato (false) : setContato(true);
+        contato ? setFormulario(false) : setFormulario(true);
+        contato ? setContato (false) : setContato(true);
     }
-
+    const formActive = () => {
+        setSobre(false);
+        setForma(false);
+        setEntrega(false);
+        setTroca(false);
+        setSeguranca(false);
+        setContato(true);
+        formulario ? setFormulario (true) : setContato(true);
+    }
     return (
-        <section>
+        <section className="middle-main">
             <div className="middle-icons">
                 <img className="middle-icons-home" src={HomeIcon} alt="Home icon" />
                 <img src={ArrowRight} alt="Arrow icon" />
-                <p className="middle-icons-title">INSTITUCIONAL</p>
+                <p onClick={contatoActive} className={contato ? "middle-title-form" : "middle-title"}>INSTITUCIONAL</p>
             </div>
             <h1 className="middle-title">INSTITUCIONAL</h1>
             <div className="middle-description">
@@ -84,8 +98,8 @@ const Middle = () => {
                     <button onClick={contatoActive} className= {contato ? "middle-contact-active-form" : "middle-contact-disabled"}>Contato</button>
                 </div>
                 <div className="middle-description-content">
-                    <h1 className="middle-description-content-title">Sobre</h1>
-                        <p className="middle-description-content-text">
+                    <h1 onClick={contatoActive} className={contato ? "middle-description-content-title-none" : "middle-description-content-title"}>Sobre</h1>
+                        <p onClick={contatoActive} className={contato ? "middle-description-content-text-none" : "middle-description-content-text"}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -107,6 +121,27 @@ const Middle = () => {
                        <br /><br />
                         </p>
                 </div>
+                <section onClick={formActive} className={formulario ? "middle-form-active" : "middle-form-disabled"}>
+                <div className="middle-form">
+                    <h1 className="middle-form-title">PREENCHA O FORMULÁRIO</h1>
+                    <label className="middle-form-input-title">Nome</label>
+                    <input className="middle-form-input" type="text" placeholder="Seu nome completo" />
+                    <label className="middle-form-input-title" placeholder="Seu e-mail">E-mail</label>
+                    <input className="middle-form-input" type="text" placeholder="Seu e-mail"/>
+                    <label className="middle-form-input-title">CPF</label>
+                    <input className="middle-form-input" type="text" placeholder="000 000 000 00"/>
+                    <label className="middle-form-input-title">Data de Nascimento</label>
+                    <input className="middle-form-input" type="text" placeholder="00.00.0000"/>
+                    <label className="middle-form-input-title">Telefone</label>
+                    <input className="middle-form-input" type="text" placeholder="(+00) 00000 0000"/>
+                    <label className="middle-form-input-title">Instagram</label>
+                    <input className="middle-form-input" type="text" placeholder="@seuuser"/>
+                    <label >*Declaro que li e aceito</label>
+                    <input type="radio" />
+                    <input type="submit" value="CADASTRE-SE" />
+                </div>
+
+            </section>
             </div>
         </section>
     )
