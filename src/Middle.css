@@ -50,7 +50,6 @@
 
 .middle-contact-disabled {
 	background-color: #FFFFFF;
-	outline: 0;
 	border: 0;
 	text-align: initial;
 	padding:10px 0px 10px 16px;
@@ -72,7 +71,6 @@
 .middle-contact-active,
 .middle-contact-active-form {
 	background-color: #00C8FF;
-	outline: 0;
 	width: 270px;
 	border: 0;
 	text-align: initial;
@@ -127,7 +125,7 @@
 	background: #FFFFFF;
 	transition: all .2s ease-in-out;
 	transform: translateX(-264px);
-	margin:0 0 0 96px;
+	margin:0 0 118px 96px;
 
 }
 
@@ -164,6 +162,7 @@
 	border: 1px solid #100D0E;
 	box-sizing: border-box;
 	border-radius: 25px;
+	outline: 0;
 
 	padding:14px 30px;
 	width: 390px;
@@ -217,7 +216,6 @@
 .middle-form-submit {
 	background: #03BFFE;
 	border-radius: 25px;
-	outline: 0;
 	border: 0;
 
 	font-family: Roboto;
@@ -233,9 +231,6 @@
 	transition: all .2s ease-in-out;
 }
 
-.middle-form-submit:hover {
-	opacity: 70%;
-}
 @media screen and (min-width: 1261px){
 	.middle-contact-disabled:hover {
 		background-color: #00C8FF;
@@ -246,6 +241,13 @@
 		line-height: 19px;
 
 		color: #FFFFFF;
+	}
+	.middle-form-submit:hover {
+		opacity: 70%;
+	}
+	.middle-form-submit:active {
+		background-color: #004558;
+		opacity: 100%;
 	}
 }
 
@@ -319,7 +321,7 @@
 	}
 	.middle-form-active {
 		transform: translate(0px);
-		margin:0;
+		margin:0 0 32px 0;
 	}
 	.middle-form-input {
 		width: 312px;

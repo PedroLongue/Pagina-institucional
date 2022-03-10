@@ -19,7 +19,7 @@ const Middle = () => {
         setSeguranca(false);
         setContato(false);
         setFormulario(false);
-        sobre ? setSobre (false) : setSobre(true);
+        sobre ? setSobre (false) : setSobre(false);
     }
 
     const formaActive = () => {
@@ -29,8 +29,8 @@ const Middle = () => {
         setSeguranca(false);
         setContato(false);
         setFormulario(false);
-        forma ? setForma (false) : setForma(true);
-        forma ? setSobre(false) : setSobre (true);
+        forma ? setForma (true) : setForma(true);
+        forma ? setSobre(true) : setSobre (true);
     }
 
     const entregaActive = () => {
@@ -40,8 +40,8 @@ const Middle = () => {
         setSeguranca(false);
         setContato(false);
         setFormulario(false);
-        entrega ? setSobre(false) : setSobre (true);
-        entrega ? setEntrega (false) : setEntrega(true);
+        entrega ? setSobre(true) : setSobre (true);
+        entrega ? setEntrega (true) : setEntrega(true);
 
     }
 
@@ -52,8 +52,8 @@ const Middle = () => {
         setSeguranca(false);
         setContato(false);
         setFormulario(false);
-        troca ? setTroca (false) : setTroca(true);
-        troca ? setSobre(false) : setSobre (true);
+        troca ? setTroca (true) : setTroca(true);
+        troca ? setSobre(true) : setSobre (true);
     }
 
     const segurancaActive = () => {
@@ -63,8 +63,8 @@ const Middle = () => {
         setTroca(false);
         setContato(false);
         setFormulario(false);
-        seguranca ? setSeguranca (false) : setSeguranca(true);
-        seguranca ? setSobre(false) : setSobre (true);
+        seguranca ? setSeguranca (true) : setSeguranca(true);
+        seguranca ? setSobre(true) : setSobre (true);
     }
 
     const contatoActive = () => {
@@ -73,9 +73,9 @@ const Middle = () => {
         setEntrega(false);
         setTroca(false);
         setSeguranca(false);
-        contato ? setSobre(false) : setSobre (true);
-        contato ? setFormulario(false) : setFormulario(true);
-        contato ? setContato (false) : setContato(true);
+        contato ? setSobre(true) : setSobre(true)
+        contato ? setFormulario(true) : setFormulario(true);
+        contato ? setContato (true) : setContato(true);
 }
     return (
         <section className="middle-main">
@@ -126,7 +126,7 @@ const Middle = () => {
                         <input className="middle-form-input" type="text" placeholder="Seu nome completo" />
 
                         <label className="middle-form-input-title" placeholder="Seu e-mail">E-mail</label>
-                        <input className="middle-form-input" type="text" placeholder="Seu e-mail"/>
+                        <input className="middle-form-input" type="email" placeholder="Seu e-mail"/>
 
                         <label className="middle-form-input-title">CPF</label>
                         <input className="middle-form-input" type="text" placeholder="000 000 000 00"/>
