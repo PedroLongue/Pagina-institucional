@@ -25,17 +25,16 @@ const initialValues = {
 const MainInformationsContacts = () => {
   const [checkbox, setCheckbox] = useState(true);
   const [checkboxVerify, setCheckboxVerify] = useState(false);
+
   const toggleCheckbox = () => {
-    console.log(checkbox);
     setCheckbox(!checkbox);
   };
+
   const verifyCheckBox = () => {
     if (checkbox === true) {
       setCheckboxVerify(true);
-      console.log("checkbox state" + checkboxVerify);
     } else {
       setCheckboxVerify(false);
-      console.log("checkbox state" + checkboxVerify);
     }
   };
 
