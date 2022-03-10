@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './Footer.css'
 
 import Facebook from "./images/facebook-icon.png";
@@ -16,11 +16,32 @@ import Boleto from "./images/boleto-icon.png";
 import VtexPci from "./images/vtex-pci-200-icon.png";
 import VtexIcon from "./images/vtex-icon.png";
 import M3FooterIcon from "./images/m3-footer-icon.png";
+import MastercardMobile from "./images/mastercard-icon-mobile.png";
+import VisaMobile from "./images/visa-icon-mobile.png";
+import AmericanMobile from "./images/american-icon-mobile.png";
+import EloMobile from "./images/elo-icon-mobile.png";
+import HipercardMobile from "./images/hipercard-icon-mobile.png";
+import PaypalMobile from "./images/paypal-icon-mobile.png";
+import BoletoMobile from "./images/boleto-icon-mobile.png";
+import VtexPciMobile from "./images/vtex-pci-200-mobile.png";
 
 const Footer = () => {
+
+    const [Institutional, setInstitutional] = useState(false);
+    const [Query, setQuery] = useState(false);
+    const [Questions, setQuestions] = useState(false);
+        const openInstitutional = () => {
+            Institutional ? setInstitutional(false) : setInstitutional(true);
+        }
+        const openQuery = () => {
+            Query ? setQuery(false) : setQuery(true);
+        }
+        const openQuestions = () => {
+            Questions ? setQuestions(false) : setQuestions(true);
+        }
     return (
         <section>
-            <section className="footer">
+            <section className="footer-desktop">
                 <div className="footer-wrapper">
                     <div className="footer-wrapper-column ">
                             <h3 className="footer-wrapper-title">INSTITUCIONAL</h3>
@@ -92,7 +113,7 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <div className="footer-icons-bottom">
+            <div className="footer-icons-bottom-desktop">
                 <p className="footer-icons-text">
                     Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing<br/>
                     Elit, Sed Do Eiusmod Tempor
@@ -120,6 +141,116 @@ const Footer = () => {
 
                 </div>
             </div>
+            <section className="footer-mobile">
+                <div className="footer-button-mobile-institutional">
+                    <h5 className="footer-button-title-mobile">Institucional</h5>
+                    <button onClick={openInstitutional} className="footer-button-icon-mobile">
+                        <div className={Institutional ? "footer-button-icon-mobile-no-add" : "footer-button-icon-mobile-add"}></div>
+                        <div className="footer-button-icon-mobile-remove"></div>
+                    </button>
+                </div>
+                    <div className={Institutional ? "footer-wrapper-infos" : "footer-wrapper-no-infos"}>
+                         <a className="footer-wrapper-info" href="/">
+                            <span className="footer-wrapper-info-subtitle" >Quem Somos</span>
+                        </a>
+
+                        <a className="footer-wrapper-info" href="/">
+                            <span>Política de Privacidade</span>
+                        </a>
+
+                        <a className="footer-wrapper-info" href="/">
+                            <span>Segurança</span>
+                        </a>
+
+                        <a className="footer-wrapper-info" href="/">
+                            <span className="footer-wrapper-info-line">Seja um Revendedor</span>
+                        </a>
+
+                    </div>
+                <div className="footer-button-mobile-institutional">
+                    <h5 className="footer-button-title-mobile">Dúvidas</h5>
+                    <button onClick={openQuery} className="footer-button-icon-mobile">
+                    <div className={Query ? "footer-button-icon-mobile-no-add" : "footer-button-icon-mobile-add"}></div>
+                        <div className="footer-button-icon-mobile-remove"></div>
+                    </button>
+                </div>
+                <div className={Query ? "footer-wrapper-infos" : "footer-wrapper-no-infos"}>
+                     <a className="footer-wrapper-info" href="/">
+                            <span>Entrega</span>
+                        </a>
+                        <a className="footer-wrapper-info" href="/">
+                            <span>Pagamento</span>
+                        </a>
+                        <a className="footer-wrapper-info" href="/">
+                            <span>Troca e Devoluções</span>
+                            </a>
+                        <a className="footer-wrapper-info" href="/">
+                            <span>Dúvidas Frequentes</span>
+                    </a>
+                </div>
+                <div className="footer-button-mobile-institutional">
+                    <h5 className="footer-button-title-mobile">Fale Conosco</h5>
+                    <button onClick={openQuestions} className="footer-button-icon-mobile">
+                    <div className={Questions ? "footer-button-icon-mobile-no-add" : "footer-button-icon-mobile-add"}></div>
+                        <div className="footer-button-icon-mobile-remove"></div>
+                    </button>
+                </div>
+                <div className={Questions ? "footer-wrapper-infos" : "footer-wrapper-no-infos"}>
+
+                    <span className="footer-wrapper-info-bold1"> Atendimento ao Consumidor </span>
+
+                    <a className="footer-wrapper-info" href="/">
+                        <span>(11) 4159 9504</span>
+                    </a>
+
+                        <span className="footer-wrapper-info-bold2">Atendimento Online</span>
+
+                    <a className="footer-wrapper-info" href="/">
+                        <span> (11) 99433-8825 </span>
+                    </a>
+                </div>
+                    <div className="footer-wrapper-icons">
+                            <a href="/">
+                                <img className="footer-wrapper-icons-click" src={Facebook} alt="Facebook icon" />
+                            </a>
+                            <a href="/">
+                                <img className="footer-wrapper-icons-click footer-icon-instagram" src={Instagram} alt="" />
+                            </a>
+                            <a href="/">
+                                <img className="footer-wrapper-icons-click" src={Twitter} alt="" />
+                            </a>
+                            <a href="/">
+                                <img className="footer-wrapper-icons-click footer-icon-youtube" src={Youtube} alt="" />
+                            </a>
+                            <a href="/">
+                                <img className="footer-wrapper-icons-click" src={Linkedin} alt="" />
+                            </a>
+                        </div>
+                        <div className="footer-mobile-icons">
+                            <div className="footer-icons-wrapper">
+                                <img className="footer-icons-payment" src={MastercardMobile} alt="Logo Mastercard" />
+                                <img className="footer-icons-payment" src={VisaMobile} alt="Logo Visa" />
+                                <img className="footer-icons-payment" src={AmericanMobile} alt="Logo American Express" />
+                                <img className="footer-icons-payment" src={EloMobile}alt="Logo Elo" />
+                                <img className="footer-icons-payment" src={HipercardMobile} alt="Logo Hipercard" />
+                                <img className="footer-icons-payment" src={PaypalMobile} alt="Logo Paypal" />
+                                <img className="footer-icons-payment" src={BoletoMobile} alt="Logo Boleto" />
+                                <div className="footer-icons-divider"/>
+                                <img className="footer-icons-vtex-pci" src={VtexPciMobile} alt="Logo Vtex Pci" />
+                        </div>
+                            <p className="footer-text-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. .</p>
+                        <div className="footer-icons-wrapper-mobile">
+                            <a className="footer-icons-wrapper-vtex" href="https://vtex.com/">
+                                <p className="footer-icons-vtex-text">Powered by</p>
+                                <img className="footer-icons-vtex-img" src={VtexIcon} alt="Logo Vtex" />
+                            </a>
+                            <a className="footer-icons-wrapper-logo" href="https://m3ecommerce.com/">
+                                <p className="footer-icons-logo-text">Developed by</p>
+                                <img className="footer-icons-logo-img" src={M3FooterIcon} alt="Logo M3" />
+                            </a>
+                        </div>
+                        </div>
+            </section>
         </section>
     )
 }
