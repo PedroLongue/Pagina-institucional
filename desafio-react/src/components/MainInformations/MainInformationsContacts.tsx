@@ -23,7 +23,21 @@ const initialValues = {
 };
 
 const MainInformationsContacts = () => {
-  const [statusWaiting, setStatusWaiting] = useState(false);
+  const [checkbox, setCheckbox] = useState(true);
+  const [checkboxVerify, setCheckboxVerify] = useState(false);
+  const toggleCheckbox = () => {
+    console.log(checkbox);
+    setCheckbox(!checkbox);
+  };
+  const verifyCheckBox = () => {
+    if (checkbox === true) {
+      setCheckboxVerify(true);
+      console.log("checkbox state" + checkboxVerify);
+    } else {
+      setCheckboxVerify(false);
+      console.log("checkbox state" + checkboxVerify);
+    }
+  };
 
   const handleFormikSubmit = (values: IFormikValues) => {
     console.log(values);
@@ -136,11 +150,24 @@ const MainInformationsContacts = () => {
               />
             </div>
             <div className="form-terms">
-              <u className="form-terms-icon">*</u>
-              <u className="form-terms-text">Declaro que li e aceito</u>
-              <input type="checkbox" className="form-terms-checkbox" />
+              <div>
+                <u className="form-terms-icon">*</u>
+                <u className="form-terms-text">Declaro que li e aceito</u>
+                <input
+                  type="checkbox"
+                  className="form-terms-checkbox"
+                  onChange={toggleCheckbox}
+                />
+              </div>
+              <div className={checkbox ? "checkBox-opened" : "checkBox-closed"}>
+                <span>Por favor, leia os termos</span>
+              </div>
             </div>
-            <button type="submit" className="form-button-submit">
+            <button
+              type="submit"
+              className="form-button-submit"
+              onClick={verifyCheckBox}
+            >
               CADASTRE-SE
             </button>
           </Form>
