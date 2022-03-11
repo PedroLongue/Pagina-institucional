@@ -6,8 +6,9 @@ import './Middle.css';
 
 import ArrowRight from '../images/arrow-right-icon.png';
 import HomeIcon from '../images/home-icon.png';
-import WhatsappLogo from "../images/whatsapp-icon.png"
-import TopButton from "../images/top-button-icon.png"
+
+import WhatsappLogo from '../images/whatsapp-icon.png';
+import TopButton from '../images/top-button-icon.png';
 interface IFormikValues {
     name: String,
     email: String,
@@ -206,10 +207,9 @@ const Middle = () => {
                 </div>
             </div>
             <div className="back-top">
-                <img className="wpp-icon" src={WhatsappLogo} alt="Logo Whatsapp" />
-                <a href="/">
-                    <img src={TopButton} alt="Botão de voltar ao inicio." />
-                </a>
+                <img className="wpp-icon"src={WhatsappLogo} alt="Logo Whatsapp" />
+                <a href="/"><img src={TopButton} alt="Botão de voltar ao inicio." /></a>
+
             </div>
         </section>
     )

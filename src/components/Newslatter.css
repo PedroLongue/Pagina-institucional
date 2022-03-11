@@ -8,6 +8,7 @@
 .newslatter-wrapper-content {
 	align-items: flex-start;
 	margin: 16px 0;
+	position: relative;
 }
 .newslatter-title {
 	font-family: Roboto;
@@ -59,7 +60,9 @@
 	background-color: #004558;
 	opacity: 100%;
 }
+.error-mesage-inputs {
 
+}
 @media screen and (max-width: 768px){
 	.newslatter-wrapper-content {
 		display: flex;
