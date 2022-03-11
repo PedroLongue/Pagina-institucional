@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Helvetica Neue LT Std;
-	src: url(../fonts/HelveticaNeueLTStd-Th.otf);
+	src: url(../../fonts/HelveticaNeueLTStd-Th.otf);
 }
 .middle-main {
 	position: relative;
@@ -142,7 +142,7 @@
 	line-height: 23px;
 
 	color: #110D0F;
-	margin:10px 0 20px 26px;
+	margin:10px 0 34px 26px;
 }
 
 .middle-form-input-title {
@@ -153,8 +153,6 @@
 	line-height: 23px;
 
 	color: #100D0E;
-
-	margin:14px 0px 6px 16px;
 }
 
 .middle-form-input {
@@ -185,6 +183,8 @@
 .middle-form-labels {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+    margin-bottom: 14px;
 }
 
 .middle-form-terms {
@@ -192,6 +192,7 @@
 	justify-content: center;
 	align-items: center;
 	margin: 20px 0;
+	position: relative;
 }
 .middle-form-asterisk {
 	color: #00C8FF;
@@ -230,7 +231,40 @@
 
 	transition: all .2s ease-in-out;
 }
+.error-mesage-inputs,
+.error-mesage-cell {
+	font-family: 'Roboto';
+	font: 500;
+	font-size: 10px;
+	color: #e00303;
 
+	white-space: nowrap;
+
+	position: absolute;
+    bottom: -16px;
+	left: 20px;
+	margin: 0px;
+}
+.middle-form-input-invalid {
+	background: #FFFFFF;
+	border: 1px solid #e00303;
+	box-sizing: border-box;
+	border-radius: 25px;
+	outline: 0;
+
+	padding:14px 30px;
+	width: 390px;
+}
+.back-top {
+	display: grid;
+
+	position: fixed;
+	top: 80%;
+	left: 96%;
+}
+.wpp-icon {
+	margin-bottom: 12px;
+}
 @media screen and (min-width: 1261px){
 	.middle-contact-disabled:hover {
 		background-color: #00C8FF;
@@ -326,7 +360,9 @@
 	.middle-form-input {
 		width: 312px;
 	}
-
+	.middle-form-input-invalid {
+		width: 312px;
+	}
 	.middle-form-title{
 		font-family: Roboto;
 		font-size: 18px;
@@ -340,5 +376,9 @@
 	}
 	.middle-form {
 		align-items: center;
+	}
+	.error-mesage-cell {
+		white-space: break-spaces;
+		margin-bottom: -14px;
 	}
 }

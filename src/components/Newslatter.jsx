@@ -1,6 +1,8 @@
 import React from "react";
 import './Newslatter.css';
 
+import {Formik, Form, Field, ErrorMessage} from "formik";
+
 const Newslatter = () => {
     return (
         <section className="newslatter-wrapper">

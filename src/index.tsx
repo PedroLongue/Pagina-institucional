@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './Header.css';
-import { Header } from './Header';
+import './components/Header.css';
+import { Header } from './components/Header';
 
-import './Middle.css';
-import { Middle } from './Middle';
+import './components/Middle.css';
+import { Middle } from './components/Middle';
 
-import './Newslatter.css';
-import { Newslatter } from './Newslatter';
+import './components/Newslatter.css';
+import { Newslatter } from './components/Newslatter';
 
-import './Footer.css';
-import { Footer } from './Footer';
+import './components/Footer.css';
+import { Footer } from "./components/Footer"
 
 ReactDOM.render(
   <React.StrictMode>

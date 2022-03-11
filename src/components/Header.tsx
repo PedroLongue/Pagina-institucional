@@ -1,10 +1,10 @@
 import React from "react";
 
 import "./Header.css";
-import LogoM3 from "./images/m3-logo.png";
-import Cart from "./images/cart-icon.png";
-import Search from "./images/search-icon.png"
-import MenuIcon from "./images/menu-icon-mobile.png";
+import LogoM3 from "../images/m3-logo.png";
+import Cart from "../images/cart-icon.png";
+import Search from "../images/search-icon.png"
+import MenuIcon from "../images/menu-icon-mobile.png";
 
 const Header = () => {
     return (

@@ -1,29 +1,29 @@
 import React, {useState} from "react";
 import './Footer.css'
 
-import Facebook from "./images/facebook-icon.png";
-import Instagram from "./images/instagram-icon.png";
-import Twitter from "./images/twitter-icon.png";
-import Youtube from "./images/youtube-icon.png";
-import Linkedin from "./images/linkedin-icon.png";
-import Mastercard from "./images/mastercard-icon.png";
-import Visa from "./images/visa-icon.png";
-import American from "./images/american-icon.png";
-import Elo from "./images/elo-icon.png";
-import Hipercard from "./images/hipercard-icon.png";
-import Paypal from "./images/paypal-icon.png";
-import Boleto from "./images/boleto-icon.png";
-import VtexPci from "./images/vtex-pci-200-icon.png";
-import VtexIcon from "./images/vtex-icon.png";
-import M3FooterIcon from "./images/m3-footer-icon.png";
-import MastercardMobile from "./images/mastercard-icon-mobile.png";
-import VisaMobile from "./images/visa-icon-mobile.png";
-import AmericanMobile from "./images/american-icon-mobile.png";
-import EloMobile from "./images/elo-icon-mobile.png";
-import HipercardMobile from "./images/hipercard-icon-mobile.png";
-import PaypalMobile from "./images/paypal-icon-mobile.png";
-import BoletoMobile from "./images/boleto-icon-mobile.png";
-import VtexPciMobile from "./images/vtex-pci-200-mobile.png";
+import Facebook from "../images/facebook-icon.png";
+import Instagram from "../images/instagram-icon.png";
+import Twitter from "../images/twitter-icon.png";
+import Youtube from "../images/youtube-icon.png";
+import Linkedin from "../images/linkedin-icon.png";
+import Mastercard from "../images/mastercard-icon.png";
+import Visa from "../images/visa-icon.png";
+import American from "../images/american-icon.png";
+import Elo from "../images/elo-icon.png";
+import Hipercard from "../images/hipercard-icon.png";
+import Paypal from "../images/paypal-icon.png";
+import Boleto from "../images/boleto-icon.png";
+import VtexPci from "../images/vtex-pci-200-icon.png";
+import VtexIcon from "../images/vtex-icon.png";
+import M3FooterIcon from "../images/m3-footer-icon.png";
+import MastercardMobile from "../images/mastercard-icon-mobile.png";
+import VisaMobile from "../images/visa-icon-mobile.png";
+import AmericanMobile from "../images/american-icon-mobile.png";
+import EloMobile from "../images/elo-icon-mobile.png";
+import HipercardMobile from "../images/hipercard-icon-mobile.png";
+import PaypalMobile from "../images/paypal-icon-mobile.png";
+import BoletoMobile from "../images/boleto-icon-mobile.png";
+import VtexPciMobile from "../images/vtex-pci-200-mobile.png";
 
 const Footer = () => {
 

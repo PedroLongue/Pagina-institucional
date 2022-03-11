@@ -1,10 +1,42 @@
 import React, {useState} from "react";
+
+import {Form, Formik, Field, ErrorMessage} from "formik"
+import FormSchema from "../schema/FormSchema";
 import './Middle.css';
 
-import ArrowRight from './images/arrow-right-icon.png';
-import HomeIcon from './images/home-icon.png';
+import ArrowRight from '../images/arrow-right-icon.png';
+import HomeIcon from '../images/home-icon.png';
+import WhatsappLogo from "../images/whatsapp-icon.png"
+import TopButton from "../images/top-button-icon.png"
+interface IFormikValues {
+    name: String,
+    email: String,
+    cpf: String,
+    date: String,
+    cell: String,
+    instagram: String,
+    checkbox: String,
+}
 
 const Middle = () => {
+    const initialValues = {
+        name: "",
+        email: "",
+        cpf: "",
+        date: "",
+        cell: "",
+        instagram: "",
+        checkbox: "",
+    };
+
+    const handleClick = (values:IFormikValues) => {
+        if(values){
+            alert("Formulário preenchido com sucesso!");
+
+        }
+
+    };
+
     const [sobre, setSobre] = useState(false);
     const [forma, setForma] = useState(false);
     const [entrega, setEntrega] = useState(false);
@@ -119,39 +151,65 @@ const Middle = () => {
                         </p>
                 </div>
                 <div className={formulario ? "middle-form-active" : "middle-form-disabled"}>
-                    <div className="middle-form">
-                        <h1 className="middle-form-title">PREENCHA O FORMULÁRIO</h1>
-                        <div className="middle-form-labels">
-                            <label className="middle-form-input-title">Nome</label>
-                        <input className="middle-form-input" type="text" placeholder="Seu nome completo" />
+                    <Formik onSubmit={handleClick} initialValues={initialValues} validationSchema={FormSchema} className="middle-form">
+                        {({errors, touched}) => (
+                            <Form>
+                                <h1 className="middle-form-title">PREENCHA O FORMULÁRIO</h1>
+                                <div className="middle-form-labels">
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title">Nome</label>
+                                        <Field name="name" className={(errors.name && touched.name && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="text" placeholder="Seu nome completo" />
+                                        <ErrorMessage component="h5" name="name" className="error-mesage-inputs"/>
+                                    </div>
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title" placeholder="Seu e-mail">E-mail</label>
+                                        <Field name="email" className={(errors.email && touched.email && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="email" placeholder="Seu e-mail"/>
+                                        <ErrorMessage component="h5" name="email" className="error-mesage-inputs" />
+                                    </div>
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title">CPF</label>
+                                        <Field name="cpf" className={(errors.cpf && touched.cpf && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="text" placeholder="000.000.000-00"/>
+                                        <ErrorMessage component="h5" name="cpf" className="error-mesage-inputs"/>
+                                    </div>
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title">Data de Nascimento</label>
+                                        <Field name="date" className={(errors.date && touched.date && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="text" placeholder="00/00/0000"/>
+                                        <ErrorMessage component="h5" name="date" className="error-mesage-inputs"/>
+                                    </div>
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title">Telefone</label>
+                                        <Field name="cell" className={(errors.cell && touched.cell && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="text" placeholder="(+00) 000000000"/>
+                                        <ErrorMessage component="h5" name="cell" className="error-mesage-cell"/>
+                                    </div>
+                                    <div className="middle-form-labels">
+                                        <label className="middle-form-input-title">Instagram</label>
+                                        <Field name="instagram" className={(errors.instagram && touched.instagram && "invalid") ? "middle-form-input-invalid" : "middle-form-input"} type="text" placeholder="@seuuser"/>
+                                        <ErrorMessage component="h5" name="instagram" className="error-mesage-inputs"/>
+                                    </div>
 
-                        <label className="middle-form-input-title" placeholder="Seu e-mail">E-mail</label>
-                        <input className="middle-form-input" type="email" placeholder="Seu e-mail"/>
 
-                        <label className="middle-form-input-title">CPF</label>
-                        <input className="middle-form-input" type="text" placeholder="000 000 000 00"/>
+                                <div className="middle-form-terms">
+                                    <a href="/">
+                                        <label className="middle-form-asterisk">*</label><label className="middle-form-terms-text">Declaro que li e aceito</label>
+                                    </a>
+                                    <Field name="checkbox" className="middle-form-terms-check" type="checkbox" />
+                                    <ErrorMessage component="h5" name="checkbox" className="error-mesage-inputs"/>
 
-                        <label className="middle-form-input-title">Data de Nascimento</label>
-                        <input className="middle-form-input" type="text" placeholder="00.00.0000"/>
+                                </div>
 
-                        <label className="middle-form-input-title">Telefone</label>
-                        <input className="middle-form-input" type="text" placeholder="(+00) 00000 0000"/>
+                                <input className="middle-form-submit" type="submit" value="CADASTRE-SE" />
+                                </div>
 
-                        <label className="middle-form-input-title">Instagram</label>
-                        <input className="middle-form-input" type="text" placeholder="@seuuser"/>
-
-                        <div className="middle-form-terms">
-                            <a href="/">
-                                <label className="middle-form-asterisk">*</label><label className="middle-form-terms-text">Declaro que li e aceito</label>
-                            </a>
-                            <input className="middle-form-terms-check" type="checkbox" />
-                        </div>
-
-                        <input className="middle-form-submit" type="submit" value="CADASTRE-SE" />
-                        </div>
-
-                    </div>
+                            </Form>
+                        )}
+                    </Formik>
                 </div>
+            </div>
+            <div className="back-top">
+                <img className="wpp-icon" src={WhatsappLogo} alt="Logo Whatsapp" />
+                <a href="/">
+                    <img src={TopButton} alt="Botão de voltar ao inicio." />
+                </a>
             </div>
         </section>
     )
