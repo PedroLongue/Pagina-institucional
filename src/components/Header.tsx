@@ -25,14 +25,14 @@ const Header = () => {
                 </div>
                 <div className="relative">
                     <div className="header-desktop-wrapper-search">
-                        <input className="header-desktop-wrapper-search-input" type="text" placeholder="Buscar..." />
-                        <a href="/">
-                            <img className="header-desktop-wrapper-search-icon" alt="Search" src={Search} />
-                        </a>
+                        <button type="submit" className="header-desktop-wrapper-search-button">
+                            <input className="header-desktop-wrapper-search-input" type="text" placeholder="Buscar..." />
+                            <img className="header-desktop-wrapper-search-icon" alt="Buscar icon" src={Search} />
+                        </button>
                     </div>
                 </div>
                 <div className="header-desktop-wrapper-icons">
-                    <a href="/">
+                    <a href="/" target="_blank" rel="noreferrer">
                         <p className="header-desktop-wrapper-icons-login">ENTRAR</p>
                     </a>
                     <a href="/">
@@ -42,10 +42,10 @@ const Header = () => {
         </div>
         <div className="sub-header-desktop-wrapper"></div>
             <div className="sub-header-desktop-info">
-                <a href="/">
+                <a href="/" target="_blank" rel='noreferrer'>
                     <h2 className="sub-header-desktop-info-text sub-header-desktop-info-text-01">CURSOS</h2>
                 </a>
-                <a href="/">
+                <a href="/" target="_blank" rel='noreferrer'>
                     <h2 className="sub-header-desktop-info-text" >SAIBA MAIS</h2>
                 </a>
             </div>

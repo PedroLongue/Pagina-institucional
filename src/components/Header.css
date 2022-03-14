@@ -61,6 +61,11 @@
 	left: 232px;
 	top: 7px;
 }
+.header-desktop-wrapper-search-button {
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+}
 
 .header-desktop-wrapper-icons {
 	display: flex;

@@ -45,31 +45,31 @@ const Footer = () => {
                 <div className="footer-wrapper">
                     <div className="footer-wrapper-column ">
                             <h3 className="footer-wrapper-title">INSTITUCIONAL</h3>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span className="footer-wrapper-info-subtitle" >Quem Somos</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Política de Privacidade</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Segurança</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span className="footer-wrapper-info-line">Seja um Revendedor</span>
                         </a>
                     </div>
                     <div className="footer-wrapper-column footer-wrapper-column2">
                             <h3 className="footer-wrapper-title">DÚVIDAS</h3>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Entrega</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Pagamento</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Troca e Devoluções</span>
                             </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Dúvidas Frequentes</span>
                         </a>
                     </div>
@@ -79,35 +79,35 @@ const Footer = () => {
 
                         <span className="footer-wrapper-info-bold1" >Atendimento ao Consumidor</span>
 
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>(11) 4159 9504</span>
                         </a>
 
                             <span className="footer-wrapper-info-bold2">Atendimento Online</span>
 
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>(11) 99433-8825 </span>
                         </a>
                     </div>
                     <div className="footer-wrapper-column footer-wrapper-column4">
                         <div className="footer-wrapper-icons">
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Facebook} alt="Facebook icon" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-facebook" src={Facebook} alt="Facebook icon" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click footer-icon-instagram" src={Instagram} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-instagram" src={Instagram} alt="" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Twitter} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-twitter" src={Twitter} alt="" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click footer-icon-youtube" src={Youtube} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-youtube" src={Youtube} alt="" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Linkedin} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-linkedin" src={Linkedin} alt="" />
                             </a>
                         </div>
-                            <a href="/">
+                            <a href="/" target="_blank" rel='noreferrer'>
                                 <span className="footer-wrapper-icons-title">www.loremipsum.com</span>
                             </a>
                     </div>
@@ -130,11 +130,11 @@ const Footer = () => {
                     <img className="footer-icons-vtex-pci" src={VtexPci} alt="Logo Vtex Pci" />
                 </div>
                 <div className="footer-icons-wrapper">
-                    <a className="footer-icons-wrapper-vtex" href="https://vtex.com/">
+                    <a className="footer-icons-wrapper-vtex" href="https://vtex.com/" target="_blank" rel='noreferrer'>
                         <p className="footer-icons-vtex-text">Powered by</p>
                         <img className="footer-icons-vtex-img" src={VtexIcon} alt="Logo Vtex" />
                     </a>
-                    <a className="footer-icons-wrapper-logo" href="https://m3ecommerce.com/">
+                    <a className="footer-icons-wrapper-logo" href="https://m3ecommerce.com/" target="_blank" rel='noreferrer'>
                         <p className="footer-icons-logo-text">Developed by</p>
                         <img className="footer-icons-logo-img" src={M3FooterIcon} alt="Logo M3" />
                     </a>
@@ -150,19 +150,19 @@ const Footer = () => {
                     </button>
                 </div>
                     <div className={Institutional ? "footer-wrapper-infos" : "footer-wrapper-no-infos"}>
-                         <a className="footer-wrapper-info" href="/">
+                         <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span className="footer-wrapper-info-subtitle" >Quem Somos</span>
                         </a>
 
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Política de Privacidade</span>
                         </a>
 
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Segurança</span>
                         </a>
 
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span className="footer-wrapper-info-line">Seja um Revendedor</span>
                         </a>
 
@@ -175,16 +175,16 @@ const Footer = () => {
                     </button>
                 </div>
                 <div className={Query ? "footer-wrapper-infos" : "footer-wrapper-no-infos"}>
-                     <a className="footer-wrapper-info" href="/">
+                     <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Entrega</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Pagamento</span>
                         </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Troca e Devoluções</span>
                             </a>
-                        <a className="footer-wrapper-info" href="/">
+                        <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                             <span>Dúvidas Frequentes</span>
                     </a>
                 </div>
@@ -199,31 +199,31 @@ const Footer = () => {
 
                     <span className="footer-wrapper-info-bold1"> Atendimento ao Consumidor </span>
 
-                    <a className="footer-wrapper-info" href="/">
+                    <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                         <span>(11) 4159 9504</span>
                     </a>
 
                         <span className="footer-wrapper-info-bold2">Atendimento Online</span>
 
-                    <a className="footer-wrapper-info" href="/">
+                    <a className="footer-wrapper-info" href="/" target="_blank" rel='noreferrer'>
                         <span> (11) 99433-8825 </span>
                     </a>
                 </div>
                     <div className="footer-wrapper-icons">
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Facebook} alt="Facebook icon" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-facebook" src={Facebook} alt="Facebook icon"  />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click footer-icon-instagram" src={Instagram} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-instagram" src={Instagram} alt="Instagram icon" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Twitter} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-twitter" src={Twitter} alt="Twitter icon" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click footer-icon-youtube" src={Youtube} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-youtube" src={Youtube} alt="Youtube icon" />
                             </a>
-                            <a href="/">
-                                <img className="footer-wrapper-icons-click" src={Linkedin} alt="" />
+                            <a href="/" target="_blank" rel='noreferrer'>
+                                <img className="footer-wrapper-icons-click-linkedin" src={Linkedin} alt="Linkedin icon" />
                             </a>
                         </div>
                         <div className="footer-mobile-icons">
@@ -240,11 +240,11 @@ const Footer = () => {
                         </div>
                             <p className="footer-text-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. .</p>
                         <div className="footer-icons-wrapper-mobile">
-                            <a className="footer-icons-wrapper-vtex" href="https://vtex.com/">
+                            <a className="footer-icons-wrapper-vtex"  href="https://vtex.com/" target="_blank" rel='noreferrer'>
                                 <p className="footer-icons-vtex-text">Powered by</p>
                                 <img className="footer-icons-vtex-img" src={VtexIcon} alt="Logo Vtex" />
                             </a>
-                            <a className="footer-icons-wrapper-logo" href="https://m3ecommerce.com/">
+                            <a className="footer-icons-wrapper-logo" href="https://m3ecommerce.com/" target="_blank" rel='noreferrer'>
                                 <p className="footer-icons-logo-text">Developed by</p>
                                 <img className="footer-icons-logo-img" src={M3FooterIcon} alt="Logo M3" />
                             </a>

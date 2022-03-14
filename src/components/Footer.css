@@ -58,10 +58,6 @@
 .footer-wrapper-icons{
 	margin-bottom: 6px;
 }
-.footer-icon-youtube,
-.footer-icon-instagram {
-	margin:0 10px;
-}
 .footer-wrapper-info-bold1 {
 	margin:8px 0 6px 0;
 }
@@ -82,11 +78,34 @@
 	transition: all .1s ease-out;
 	color: #303030;
 }
+.footer-wrapper-icons-click-instagram:hover {
+	transition: all .1s ease-in;
+	background: radial-gradient(circle farthest-corner at 35% 90%, #fec66483, transparent 50%),
+	radial-gradient(circle farthest-corner at 0 140%, #fec66475, transparent 50%),
+	radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf77, transparent 50%),
+	radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf77, transparent 50%),
+	radial-gradient(ellipse farthest-corner at 100% 0, #883dc275, transparent 50%),
+	 radial-gradient(ellipse farthest-corner at 60% -20%, #883dc271, transparent 50%),
+	 radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a7a, transparent),
+	 linear-gradient(#6459ca65, #bc319071 30%, #e33f6060 50%, #f775385e 70%, #fec66d63 100%);
+	border-radius: 20px;
+}
+.footer-wrapper-icons-click-youtube:hover {
+	transition: all .2s ease-in;
+	background-color: #ff00008c ;
+	border-radius: 20px;
+}
 
-.footer-wrapper-icons-click:hover {
+.footer-wrapper-icons-click-facebook:hover,
+.footer-wrapper-icons-click-twitter:hover,
+.footer-wrapper-icons-click-linkedin:hover {
 	transition: all .2s ease-in;
 	background-color: #00c8ff9f;
 	border-radius: 20px;
+}
+.footer-wrapper-icons-click-youtube,
+.footer-wrapper-icons-click-instagram {
+	margin:0 10px;
 }
 .footer-wrapper-icons-click:active {
 	background-color: #FFFFFF;
