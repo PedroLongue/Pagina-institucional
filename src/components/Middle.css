@@ -291,7 +291,6 @@
 	}
 	.middle-description-content-text {
 		text-align: justify;
-		max-width: 400px;
 	}
 	.middle-description-infos {
 		margin-left: 16px;
@@ -380,5 +379,9 @@
 	.error-mesage-cell {
 		white-space: break-spaces;
 		margin-bottom: -14px;
+	}
+	.back-top{
+		left: 90%;
+		z-index: 10;
 	}
 }
