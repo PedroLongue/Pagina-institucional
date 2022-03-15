@@ -4,6 +4,7 @@
 }
 .middle-main {
 	position: relative;
+	overflow: hidden;
 }
 .middle-icons {
 	display: flex;
@@ -105,9 +106,6 @@
 	color: #292929;
 	margin:0 0 12px 0;
 }
-.middle-description-content-title-none {
-	display: none;
-}
 .middle-description-content-text {
 	font-family: Roboto;
 	font-size: 13px;
@@ -117,13 +115,13 @@
 }
 
 .middle-form-disabled {
-	transition: all .2s ease-in-out;
+	transition: all .4s linear;
 	transform: translateX(2000px);
-	display: none;
+	position: absolute;
 }
 .middle-form-active {
 	background: #FFFFFF;
-	transition: all .2s ease-in-out;
+	transition: all .4s ease-in-out;
 	transform: translateX(-264px);
 	margin:0 0 118px 96px;
 
@@ -177,7 +175,9 @@
 }
 
 .middle-description-content-none {
-	display: none;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .middle-form-labels {
@@ -333,9 +333,11 @@
 		display: none;
 	}
 	.middle-description-content-title{
+		opacity: 1;
 		margin: 0 0 16px 0;
 	}
 	.middle-description-content-text {
+		opacity: 1;
 		font-size: 12px;
 		line-height: 18px;
 		width: 344px;

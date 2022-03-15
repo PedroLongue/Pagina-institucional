@@ -127,9 +127,9 @@ const Middle = () => {
                     <button onClick={segurancaActive} className= {seguranca ? "middle-contact-active" : "middle-contact-disabled"}>Segurança e Privacidade</button>
                     <button onClick={contatoActive} className= {contato ? "middle-contact-active-form" : "middle-contact-disabled"}>Contato</button>
                 </div>
-                <div className="middle-description-content">
-                    <h1 className={contato ? "middle-description-content-none" : "middle-description-content-title"}>Sobre</h1>
-                        <p className={contato ?  "middle-description-content-none" : "middle-description-content-text"}>
+                <div className={sobre ? "middle-description-content-none" : "middle-description-content"}>
+                    <h1 className="middle-description-content-title">Sobre</h1>
+                        <p className="middle-description-content-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

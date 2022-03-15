@@ -5,9 +5,16 @@ import LogoM3 from "../images/m3-logo.png";
 import Cart from "../images/cart-icon.png";
 import Search from "../images/search-icon.png"
 
+
+
 const Header = () => {
     const [openMenu, setOpenMenu] = useState (false);
+    const [openCart, setOpenCart] = useState(false);
 
+    const clickOpenCart = () => {
+        setOpenMenu(false);
+        openCart ? setOpenCart(false) : setOpenCart(true);
+    }
     const clickOpenMenu = () => {
        openMenu ? setOpenMenu(false) : setOpenMenu(true);
    }
@@ -35,9 +42,18 @@ const Header = () => {
                     <a href="/" target="_blank" rel="noreferrer">
                         <p className="header-desktop-wrapper-icons-login">ENTRAR</p>
                     </a>
-                    <a href="/">
+                    <button onClick={clickOpenCart} className="header-desktop-wrapper-icons-cart-button" type="button">
                         <img className="header-desktop-wrapper-icons-cart"src={Cart} alt="Cart" />
-                    </a>
+                    </button>
+                </div>
+                <div className={openCart ? "header-desktop-wrapper-cart-open" : "header-desktop-wrapper-cart-closed"}>
+                    <div className="header-desktop-cart-content" >
+                        <button onClick={clickOpenCart} type="button" className="btn-close">
+                            fechar
+                        </button>
+                        <h2 className="header-desktop-cart-content-title">Seu carrinho está vazio</h2>
+                        <p className="header-desktop-cart-content-description">Para continuar comprando, navegue pelas categorias do site ou faça uma busca pelo seu produto.</p>
+                    </div>
                 </div>
         </div>
         <div className="sub-header-desktop-wrapper"></div>
@@ -67,16 +83,26 @@ const Header = () => {
                     <a href="/">   <img src={LogoM3} alt="Logo M3" />  </a>
                     <a href="/">    <h1 className="header-mobile-wrapper-logo-title">academy</h1></a>
                     </div>
-                    <a href="/">
+                    <button onClick={clickOpenCart} className="header-mobile-wrapper-icons-cart-button" type="button">
                         <img className="header-mobile-wrapper-icons-cart"src={Cart} alt="Cart" />
-                    </a>
+                    </button>
                 </div>
-                <div className="header-mobile-wrapper-search">
-                    <input className="header-mobile-wrapper-search-input" type="text" name="input-mobile" placeholder="Buscar..." />
-                    <a href="/">
-                            <img className="header-mobile-wrapper-search-icon" alt="Search" src={Search} />
-                        </a>
+                <div className={openCart ? "header-desktop-wrapper-cart-open" : "header-desktop-wrapper-cart-closed"}>
+                    <div className="header-desktop-cart-content" >
+                        <button onClick={clickOpenCart} type="button" className="btn-close">
+                            fechar
+                        </button>
+                        <h2 className="header-desktop-cart-content-title">Seu carrinho está vazio</h2>
+                        <p className="header-desktop-cart-content-description">Para continuar comprando, navegue pelas categorias do site ou faça uma busca pelo seu produto.</p>
+                    </div>
                 </div>
+                    <div className="header-mobile-wrapper-search">
+                        <input className="header-mobile-wrapper-search-input" type="text" name="input-mobile" placeholder="Buscar..." />
+                        <a href="/">
+                                <img className="header-mobile-wrapper-search-icon" alt="Search" src={Search} />
+                            </a>
+                    </div>
+
            </div>
     </section>
 )}
