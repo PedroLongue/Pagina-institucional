@@ -1,0 +1,39 @@
+.container {
+  max-width: 1017px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 170px;
+}
+
+.main-title {
+  font-family: "Helvetica Neue LT Std";
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  text-align: center;
+}
+
+.main-institucional {
+  display: flex;
+}
+
+.main-menu {
+  list-style: none;
+  margin-top: 100px;
+  margin-right: 32px;
+}
+
+.main-description {
+  max-width: 715px;
+}
+
+.main-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #7d7d7d;
+}

@@ -1,0 +1,35 @@
+.main-header {
+  background-color: #00c8ff;
+  padding: 18px 109px;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.lbHeader {
+  color: #595959;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.menuHeader {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 14px;
+}
+
+.linkMenu {
+  margin-right: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.mainMenu {
+  background-color: #00c8ff;
+}
