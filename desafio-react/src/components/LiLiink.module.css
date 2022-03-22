@@ -1,5 +1,6 @@
 .menu-list {
-  width: 270px;
+  max-width: 270px;
+  min-width: 200px;
   color: #ffffff;
 }
 

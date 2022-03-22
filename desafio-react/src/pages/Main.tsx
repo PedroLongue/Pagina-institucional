@@ -7,16 +7,15 @@ const Main = () => {
     <>
       <div className={styles["container"]}>
         <div className={styles["main-institucional"]}>
-          <div>
-            <ul className={styles["main-menu"]}>
-              <LiLink text="Sobre" />
-              <LiLink text="Forma de Pagamento" />
-              <LiLink text="Entrega" />
-              <LiLink text="Troca e Devolução" />
-              <LiLink text="Segurança e Privacidade" />
-              <LiLink text="Contato" />
-            </ul>
-          </div>
+          <ul className={styles["main-menu"]}>
+            <LiLink text="Sobre" />
+            <LiLink text="Forma de Pagamento" />
+            <LiLink text="Entrega" />
+            <LiLink text="Troca e Devolução" />
+            <LiLink text="Segurança e Privacidade" />
+            <LiLink text="Contato" />
+          </ul>
+
           <div className={styles["main-description"]}>
             <h2 className={styles["main-title"]}>INSTITUCIONAL</h2>
             <h3>Sobre</h3>

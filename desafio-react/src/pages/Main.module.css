@@ -19,13 +19,13 @@
 }
 
 .main-menu {
-  list-style: none;
   margin-top: 100px;
   margin-right: 32px;
+  border-right: 1px solid #e5e5e5;
 }
 
 .main-description {
-  max-width: 715px;
+  margin-right: 32px;
 }
 
 .main-text {

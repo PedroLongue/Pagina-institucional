@@ -1,13 +1,24 @@
-.main-header {
-  background-color: #00c8ff;
-  padding: 18px 109px;
-  border-bottom: 1px solid #c4c4c4;
-  display: flex;
-  align-items: center;
-  text-align: center;
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1017px;
 }
 
-.lbHeader {
+.main-header {
+  background-color: #00c8ff;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 26px 0 18px 0;
+}
+
+.main-header__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.main-header__label {
   color: #595959;
   border: 1px solid #000000;
   border-radius: 4px;
@@ -19,17 +30,53 @@
   display: flex;
   padding: 14px;
 }
+.main-header__bootstrap {
+  display: flex;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+}
+.main-header__input {
+  outline: 0;
+  border: 0;
+  padding: 8px 12px;
+  max-width: 212px;
+}
+.main-header__button {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border: 0;
+  outline: 0;
+}
+.sprite-search-icon {
+  content: url("../arquivos/sprite/sprite-search-icon.png");
+  width: 18px;
+  height: 18px;
+}
 
-.linkMenu {
-  margin-right: 40px;
+.sprite-cart-icon {
+  content: url("../arquivos/sprite/sprite-cart-icon.png");
+  width: 28px;
+  height: 28px;
+}
+
+.linkMenu a {
+  color: #ffffff;
+  text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  margin-right: 40px;
   line-height: 16px;
-  color: #ffffff;
 }
 
 .mainMenu {
   background-color: #00c8ff;
+}
+
+@media (max-width: 767px) {
+  .mainMenu {
+    display: none;
+  }
 }
