@@ -7,7 +7,6 @@
 
 .main-header {
   background-color: #00c8ff;
-  border-bottom: 1px solid #c4c4c4;
   padding: 26px 0 18px 0;
 }
 
@@ -23,6 +22,16 @@
   border: 1px solid #000000;
   border-radius: 4px;
 }
+.main-header__button-menu {
+  background-color: transparent;
+  border: 0;
+}
+
+.main-header__searchbox-mobile {
+  justify-content: center;
+  background-color: #00c8ff;
+  padding: 16px;
+}
 
 .menuHeader {
   list-style: none;
@@ -30,24 +39,13 @@
   display: flex;
   padding: 14px;
 }
-.main-header__bootstrap {
-  display: flex;
-  border: 2px solid #f0f0f0;
-  border-radius: 5px;
+
+.sprite-menu-icon {
+  content: url("../arquivos/sprite/sprite-menu-icon.png");
+  width: 28px;
+  height: 28px;
 }
-.main-header__input {
-  outline: 0;
-  border: 0;
-  padding: 8px 12px;
-  max-width: 212px;
-}
-.main-header__button {
-  position: relative;
-  cursor: pointer;
-  background-color: white;
-  border: 0;
-  outline: 0;
-}
+
 .sprite-search-icon {
   content: url("../arquivos/sprite/sprite-search-icon.png");
   width: 18px;
@@ -67,16 +65,37 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  margin-right: 40px;
   line-height: 16px;
+  padding: 0 20px;
+}
+
+.linkMenu a:hover {
+  color: #000000;
 }
 
 .mainMenu {
   background-color: #00c8ff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 539px) {
   .mainMenu {
+    display: none;
+  }
+  .menuHeader li:first-child {
+    display: none;
+  }
+  .main-header__searchbox-desktop {
+    display: none;
+  }
+}
+@media (min-width: 540px) {
+  .main-header {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .main-header__searchbox-mobile {
+    display: none;
+  }
+  .main-header__button-menu {
     display: none;
   }
 }

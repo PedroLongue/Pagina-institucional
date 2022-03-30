@@ -1,13 +1,13 @@
 .menu-list {
-  max-width: 270px;
+  /* max-width: 270px; */
   min-width: 200px;
-  color: #ffffff;
+  list-style: none;
 }
 
 .menu-list a {
   text-decoration: none;
   color: #7d7d7d;
-  max-width: 270px;
+  /* max-width: 270px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

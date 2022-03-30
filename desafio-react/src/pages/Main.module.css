@@ -13,19 +13,26 @@
   color: #292929;
   text-align: center;
 }
+.main-subtitle {
+  color: #292929;
+}
 
 .main-institucional {
   display: flex;
 }
 
+.main-institucional__menu {
+  padding: 0 16px;
+}
+
 .main-menu {
-  margin-top: 100px;
-  margin-right: 32px;
+  /* margin-top: 100px; */
   border-right: 1px solid #e5e5e5;
+  padding: 0;
 }
 
 .main-description {
-  margin-right: 32px;
+  margin: 0 32px;
 }
 
 .main-text {
@@ -36,4 +43,16 @@
   line-height: 15px;
 
   color: #7d7d7d;
+}
+
+@media (max-width: 767px) {
+  .main-menu {
+    border: 0;
+  }
+  .main-institucional {
+    flex-direction: column;
+  }
+  .main-subtitle {
+    text-align: center;
+  }
 }

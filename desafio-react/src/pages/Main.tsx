@@ -6,19 +6,22 @@ const Main = () => {
   return (
     <>
       <div className={styles["container"]}>
+        <h2 className={styles["main-title"]}>INSTITUCIONAL</h2>
         <div className={styles["main-institucional"]}>
-          <ul className={styles["main-menu"]}>
-            <LiLink text="Sobre" />
-            <LiLink text="Forma de Pagamento" />
-            <LiLink text="Entrega" />
-            <LiLink text="Troca e Devolução" />
-            <LiLink text="Segurança e Privacidade" />
-            <LiLink text="Contato" />
-          </ul>
+          <div className={styles["main-institucional__menu"]}>
+            <ul className={styles["main-menu"]}>
+              <LiLink text="Sobre" link="/" />
+              <LiLink text="Forma de Pagamento" link="/" />
+              <LiLink text="Entrega" link="/" />
+              <LiLink text="Troca e Devolução" link="/" />
+              <LiLink text="Segurança e Privacidade" link="/" />
+              <LiLink text="Contato" link="/contato" />
+            </ul>
+          </div>
 
           <div className={styles["main-description"]}>
-            <h2 className={styles["main-title"]}>INSTITUCIONAL</h2>
-            <h3>Sobre</h3>
+            {/*   <h2 className={styles["main-title"]}>INSTITUCIONAL</h2> */}
+            <h3 className={styles["main-subtitle"]}>Sobre</h3>
             <p className={styles["main-text"]}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -1,6 +1,11 @@
 import React from "react";
 import logo from "../arquivos/img/logo-m3-desktop.png";
 import styles from "./Home.module.css";
+import { LiSearchbox } from "../components/LiSearchbox";
+
+function openMenu() {
+  console.log("open");
+}
 
 const Home = () => {
   return (
@@ -8,23 +13,19 @@ const Home = () => {
       <div className={styles["main-header"]}>
         <div className={styles["container"]}>
           <div className={styles["main-header__title"]}>
+            <button
+              onClick={openMenu}
+              className={styles["main-header__button-menu"]}
+            >
+              <i className={styles["sprite-menu-icon"]}></i>
+            </button>
+
             <a href="/">
               <img src={logo} alt="" />
             </a>
 
-            <div className={styles["main-header__bootstrap"]}>
-              <input
-                className={styles["main-header__input"]}
-                type="text"
-                placeholder="Buscar..."
-              ></input>
-
-              <button
-                id="search-icon"
-                className={styles["main-header__button"]}
-              >
-                <i className={styles["sprite-search-icon"]}></i>
-              </button>
+            <div className={styles["main-header__searchbox-desktop"]}>
+              <LiSearchbox />
             </div>
 
             <ul className={styles["menuHeader"]}>
@@ -52,6 +53,9 @@ const Home = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className={styles["main-header__searchbox-mobile"]}>
+        <LiSearchbox />
       </div>
     </>
   );

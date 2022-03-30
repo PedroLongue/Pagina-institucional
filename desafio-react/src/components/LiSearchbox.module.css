@@ -1,0 +1,30 @@
+.search-box {
+  display: flex;
+  /* border: 2px solid #f0f0f0; */
+  border-radius: 5px;
+}
+.search-box__txt {
+  outline: 0;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 8px 12px;
+}
+.search-box__btn {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 0 5px 5px 0;
+}
+.sprite-search-box {
+  content: url("../arquivos/sprite/sprite-search-icon.png");
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 539px) {
+  .search-box__txt {
+    width: 343px;
+  }
+}
