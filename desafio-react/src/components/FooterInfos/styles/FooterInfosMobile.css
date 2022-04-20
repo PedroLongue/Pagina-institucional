@@ -1,0 +1,37 @@
+@media screen and (min-width: 721px) {
+  .footer-infos-mobile {
+    display: none;
+  }
+}
+
+.footer-infos-button {
+  outline: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-infos-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 15px;
+}
+
+.footer-infos-links-wrapper {
+  margin-top: 25px;
+}
+
+.opened-institutional,
+.opened-questions,
+.opened-tell-us {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.closed-institutional,
+.closed-questions,
+.closed-tell-us {
+  display: none;
+}

@@ -1,0 +1,51 @@
+.footer-infos-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px;
+  gap: 70px;
+}
+
+.footer-infos-title {
+  font-family: var(--font-family-Roboto);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-infos-text {
+  font-family: var(--font-family-Roboto);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+}
+
+.footer-infos-institutional-wrapper,
+.footer-infos-questions-wrapper,
+.footer-infos-tell-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-infos-social-media {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-infos-social-media li {
+  list-style: none;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-infos-wrapper {
+    display: none;
+  }
+
+  .footer-infos-mobile {
+    display: block;
+  }
+}

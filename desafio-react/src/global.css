@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+:root {
+  --white: #fff;
+
+  --black: #000;
+
+  --blue-500: #00c8ff;
+
+  --gray-300: #e7e7e7;
+  --gray-200: #e5e5e5;
+  --gray-500: #c4c4c4;
+  --gray-800: #585858;
+  --gray-900: #7d7d7d;
+  --gray-1000: #292929;
+
+  --font-family-Roboto: "Roboto";
+}
