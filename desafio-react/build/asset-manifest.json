@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Pagina-institucional/static/css/main.da34682e.css",
+    "main.js": "/Pagina-institucional/static/js/main.00eefb7b.js",
+    "index.html": "/Pagina-institucional/index.html",
+    "main.da34682e.css.map": "/Pagina-institucional/static/css/main.da34682e.css.map",
+    "main.00eefb7b.js.map": "/Pagina-institucional/static/js/main.00eefb7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da34682e.css",
+    "static/js/main.00eefb7b.js"
+  ]
+}
